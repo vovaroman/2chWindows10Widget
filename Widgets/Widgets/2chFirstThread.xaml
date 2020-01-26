@@ -1,0 +1,44 @@
+﻿<Window x:Class="Widgets.DvachFirstThrread"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Widgets"
+        mc:Ignorable="d"
+        Title="DvachFirstThread" Height="150" Width="400"
+        WindowStyle="None"
+        AllowsTransparency="True"        
+        Loaded="_dvachFirstThread_OnLoaded"
+        ShowInTaskbar="false"
+
+        >
+
+    <Window.Background>
+        <SolidColorBrush Opacity="0.5" Color="Black"/>
+    </Window.Background>
+
+    <Border x:Name="Border" BorderThickness="1" CornerRadius="0" >
+        <Grid x:Name="ContentRoot" Margin="0,0,0,266.6">
+            <TextBlock TextWrapping="WrapWithOverflow" 
+                    x:Name="txtThreadComment"         
+                    Opacity="1.0"
+                    FontSize="20"
+                    Foreground="White" Margin="10,10,18,-117" Height="107" Width="372" 
+                    ScrollViewer.VerticalScrollBarVisibility="Visible"
+                    ScrollViewer.CanContentScroll="True"
+                    >
+
+                </TextBlock>
+
+            <Label x:Name="Link"
+               Opacity="1.0"
+               FontSize="10"
+               MouseLeftButtonDown="Link_MouseLeftButtonDown" Margin="10,116,18,-141" Cursor="Hand"
+               />
+        
+
+    </Grid>
+    </Border>
+
+
+</Window>
